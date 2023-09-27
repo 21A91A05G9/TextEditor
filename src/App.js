@@ -8,8 +8,8 @@ import Logo from  './Logo'
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
-  const [mode, setMode] = useState('dark');
-  const [color,setColor] = useState('black')
+  const [mode, setMode] = useState('light');
+  const [color,setColor] = useState('white')
   const [alert,setAAlert] = useState(null)
   const toggleMode = () => {
       setAAlert('alert msg')
