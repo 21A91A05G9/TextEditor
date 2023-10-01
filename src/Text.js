@@ -56,7 +56,7 @@ function Text(props){
      }
     return (
         
-       <div className="container" >
+       <div className="container" style={{height:'100vh'}}>
              <form>
             <div className="mb-3 container">
             <h2>Enter your text</h2>
@@ -66,8 +66,9 @@ function Text(props){
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={toLower}>ToLowerCase</button>
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={clear}>Clear</button>
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={copy}>Copy</button>
-            <button type="button" className="btn btn-primary mx-1 my-2" onClick={removeExtraSpaces}>RemoveExtraSpaces</button>
+          
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={camelCase}>Camel Case</button>
+            <button type="button" className="btn btn-primary mx-1 my-2" onClick={removeExtraSpaces}>RemoveExtraSpaces</button>
             <div className="btn-group dropend">
             <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Fonts
@@ -81,11 +82,11 @@ function Text(props){
             <button type="button" style={{width:'100%' }} className="btn btn-primary mx-1 my-2" onClick={fontStyle6}>Georgia</button>
             </ul>
             </div>
-            <input type="color" onChange={props.changeColor} className="btn  mx-2 form-control form-control-color" id="exampleColorInput" ></input> 
+            {/* <input type="color" onChange={props.changeColor} className="btn  mx-2 form-control form-control-color" id="exampleColorInput" ></input>  */}
 
             
             </form>
-            <p className="my-4">word count: {text.split(' ').length}  |  character count: {text.length}</p>
+            <p className="my-4">word count: {Math.min(text.length,text.split(' ').length)} |  character count: {text.length}</p>
             <h3>Preview</h3>
             <p>{text}</p>
        </div>

@@ -1,4 +1,3 @@
-import { useState } from "react"
 
 function About(props){
     // const [mode,setMode] = useState('Dark Mode')
@@ -23,7 +22,8 @@ function About(props){
     //     }
     // }
     return(
-        <div className="container" >
+        <div className="container" style={{height:'100vh',textAlign: 'justify',
+        textJustify: 'inter-word',color:props.color ,backgroundColor:props.color==='white'?'black':'white'}}  >
              <div className="accordion accordion-flush" id="accordionFlushExample">
             <div className="accordion-item" style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}}>
                 <h1>About Us</h1>
@@ -36,7 +36,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body" style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}}>Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the first item's accordion body.</div>
+                <div className="accordion-body" style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}}>Uppercasing text involves converting all letters in the selected text to capital letters. This is often used for emphasis or to ensure uniformity in text. For example, if you have the text "The quick brown fox," selecting it and applying uppercase would result in "THE QUICK BROWN FOX."</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -46,7 +46,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Lowercasing text is the opposite of uppercase. It converts all letters in the selected text to lowercase. For example, "HELLO" would become "hello." This is useful for standardizing text or making it more readable.</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -56,7 +56,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Camel case is a specific naming convention where compound words or phrases are written without spaces, and each word or abbreviation begins with a capital letter, except the first word which starts with a lowercase letter. For example, "text editor" becomes "textEditor."</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -66,7 +66,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">The clear action erases all content from the selected area, making it empty. This is useful when you want to start fresh or remove unwanted text quickly without deleting character by character.</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -76,7 +76,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Copying text allows you to duplicate selected content. After copying, you can paste it elsewhere in the document or in another application. It's a fundamental function for duplicating text without altering the original.</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -86,7 +86,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Removing extra spaces involves deleting any additional white spaces within the selected text. This can include multiple consecutive spaces or leading/trailing spaces. For example, " Hello World " would become "Hello World" after removing extra spaces.</div>
                 </div>
             </div>
             <div className="accordion-item">
@@ -96,7 +96,7 @@ function About(props){
                 </button>
                 </h2>
                 <div id="flush-collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                <div style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white'}} className="accordion-body">Copying text allows you to duplicate selected content. After copying, you can paste it elsewhere in the document or in another application. It's a fundamental function for duplicating text without altering the original.</div>
                 </div>
             </div>
             </div>
