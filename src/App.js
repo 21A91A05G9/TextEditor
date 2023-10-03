@@ -16,17 +16,17 @@ function App() {
       }
       else {
         setMode('dark')
-        setColor('black')
+        setColor('#001a33')
       }
   }
   return (
-    <div className="App" style={{ backgroundColor:color==='white'?'black':'white', color:color}}>
+    <div className="App" style={{ backgroundColor:color,color:color==='white'?'black':'white'}}>
       <BrowserRouter>
-      <Navbar heading="textEditors" mode={mode} toggleMode={toggleMode}/>
+      <Navbar heading="textEditors" mode={mode} toggleMode={toggleMode} color={color} />
         
         <Routes>
-          <Route path="/About" element={<About color={color}/> }/>
           <Route path="/"  element={<Logo color={color}/>}/>
+          <Route path="/About" element={<About color={color}/> }/>
           <Route path="/Contact"  element={<Contact color={color}/>}/>
           <Route path="/Text" element={<Text color={color}/> }/>
         </Routes>

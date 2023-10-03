@@ -59,8 +59,8 @@ function Text(props){
        <div className="container" style={{height:'100vh'}}>
              <form>
             <div className="mb-3 container">
-            <h2>Enter your text</h2>
-            <textarea  className="form-control my-4" placeholder="Write here..." style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white' , fontFamily:font ,border:`2px solid ${props.color}`}}  value={text} onChange={change} id="exampleFormControlTextarea1" rows="6"></textarea>
+            <h2 className="my-4">Enter text to edit...!</h2>
+            <textarea  className="form-control my-4" placeholder="Write here..." style={{ color:props.color==='white'?'black':'white' ,backgroundColor:props.color==='white'?'white':'black' , fontFamily:font ,border:`2px solid ${props.color}`, boxShadow:'1px 1px 8px 1px gray'}}  value={text} onChange={change} id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={toUpper}>ToUpperCase</button>
             <button type="button" className="btn btn-primary mx-1 my-2" onClick={toLower}>ToLowerCase</button>
@@ -73,7 +73,7 @@ function Text(props){
             <button type="button" className="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 Fonts
             </button>
-            <ul className="dropdown-menu" style={{ color:props.color ,backgroundColor:props.color==='white'?'black':'white' , fontFamily:font}} >
+            <ul className="dropdown-menu" style={{ color:props.color ,backgroundColor:'transparent', fontFamily:font}} >
             <button type="button" style={{width:'100%' }} className="btn btn-primary mx-1 my-2" onClick={fontStyle1}>Open Sans</button>
             <button type="button" style={{width:'100%' }} className="btn btn-primary mx-1 my-2" onClick={fontStyle2}>Bold</button>
             <button type="button" style={{width:'100%' }} className="btn btn-primary mx-1 my-2" onClick={fontStyle3}>Courier New</button>
