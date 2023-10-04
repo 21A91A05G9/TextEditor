@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   const [mode, setMode] = useState('light');
   const [color,setColor] = useState('white')
+  
   const toggleMode = () => {
       if(mode==='dark') {
         setMode('light')
@@ -20,7 +21,7 @@ function App() {
       }
   }
   return (
-    <div className="App" style={{ backgroundColor:color,color:color==='white'?'black':'white'}}>
+    <div className="App" style={{ backgroundColor:color==='white'?'white':color,color:color==='white'?'black':'white'}}>
       <BrowserRouter>
       <Navbar heading="textEditors" mode={mode} toggleMode={toggleMode} color={color} />
         

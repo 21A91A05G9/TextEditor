@@ -1,7 +1,7 @@
 function Contact(props){
     return (
-      <footer className="scontainer-fluid" style={{backgroundColor:props.color==='white'?'black':'white', color:props.color}}> 
-       <div className="container" style={{height:"100vh",backgroundColor:props.color==='white'?'black':'white', color:props.color}}>
+      <footer className="scontainer-fluid" style={{backgroundColor:props.color, color:props.color==='white'?'black':'white'}}> 
+       <div className="container" style={{height:"100vh",backgroundColor:props.color, color:props.color==='white'?'black':'white'}}>
             <div className="row container" >
                 <div className="col-md-5 col-sm-1 col-xs-1 col-lg-5  col-offset-md-3"></div>
                 <h1 className='col my-4'>Contact Us</h1>
@@ -55,7 +55,7 @@ function Contact(props){
                 </ul>
               </div>
               <div className="col-md-1 col-sm-1 col-xs-1 col-offset-md-1"></div>
-              <div className="col-md-3 col-sm-12 col-xs-12 col-lg-3" style={{backgroundColor:props.color==='white'?'black':'white', color:props.color}}>
+              <div className="col-md-3 col-sm-12 col-xs-12 col-lg-3" style={{backgroundColor:props.color, color:props.color==='white'?'black':'white'}}>
                 <form >
                   <div className="heading my-2 "><b>Feedback and suggestions:</b></div>
                   <div className="d-flex-column  gap-2">
@@ -80,7 +80,7 @@ function Contact(props){
               </div>
             </div>
 
-            <div className="row d-flex justify-content-between py-4" style={{backgroundColor:props.color==='white'?'black':'white', color:props.color,textAlign:'center'}}>
+            <div className="row d-flex justify-content-between py-4" style={{backgroundColor:props.color, color:props.color,textAlign:'center'}}>
               <p className="copy-rights">
                 © 2023 textEditors @ Noolu Vasavi. All rights reserved.
               </p>
