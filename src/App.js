@@ -31,7 +31,7 @@ function App() {
           <Route path="/About" element={<About color={color}/> }/>
           <Route path="/Contact"  element={<Contact color={color}/>}/>
           {/* <Route path="/Text" element={<Text color={color}/> }/> */}
-          <Route path="/Calci" element={<Calci color={color}/> }/>
+          <Route path="/Text" element={<Calci color={color}/> }/>
         </Routes>
       </BrowserRouter>
      
