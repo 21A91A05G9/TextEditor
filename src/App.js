@@ -5,7 +5,6 @@ import Contact from './Contact';
 import Text from './Text'
 import Logo from  './Logo'
 import { useState } from 'react';
-import Calci from './calci';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   const [mode, setMode] = useState('light');
@@ -22,7 +21,7 @@ function App() {
       }
   }
   return (
-    <div className="App" style={{height:'100vh', backgroundColor:color==='white'?'white':color,color:color==='white'?'black':'white'}}>
+    <div className="App" style={{height:'100vh', alignItems:'center', justifyContent:'center', backgroundColor:color==='white'?'white':color,color:color==='white'?'black':'white'}}>
       <BrowserRouter>
       <Navbar heading="textEditors" mode={mode} toggleMode={toggleMode} color={color} />
         
@@ -30,14 +29,9 @@ function App() {
           <Route path="/"  element={<Logo color={color}/>}/>
           <Route path="/About" element={<About color={color}/> }/>
           <Route path="/Contact"  element={<Contact color={color}/>}/>
-          {/* <Route path="/Text" element={<Text color={color}/> }/> */}
-          <Route path="/Text" element={<Calci color={color}/> }/>
+          <Route path="/Text" element={<Text color={color}/> }/>
         </Routes>
       </BrowserRouter>
-     
-      {/* <Alert alert={alert}/> */}
-      
-      
 
     </div>
   );
